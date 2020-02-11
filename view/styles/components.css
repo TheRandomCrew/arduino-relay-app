@@ -1,0 +1,28 @@
+.button-primary {
+  font-weight: 700;
+  border-radius: 10px;
+  cursor: pointer;
+  font-size: 14px;
+  padding: 5px 28px;
+  text-decoration: none;
+  font-family: var(--openSans600), sans-serif;
+  font-weight: 600;
+}
+
+.title-text {
+  font-family: var(--openSans600), sans-serif;
+  font-weight: 600;
+}
+
+.flex-column {
+  display: flex;
+  flex-direction: column;
+}
+
+.m-20 {
+  margin: 20px;
+}
+
+.m-10 {
+  margin: 10px;
+}

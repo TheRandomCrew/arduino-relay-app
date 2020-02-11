@@ -1,0 +1,27 @@
+@import url('https://fonts.googleapis.com/css?family=Open+Sans:600|Oxygen&display=swap');
+
+:root {
+  --violet279: #bf5af5;
+
+  --blue196: #1fa1d2;
+  --blue201: #0a4463;
+  --blue207: #2196f3;
+  --blue209: #bddfff;
+  --blue212: #419aff;
+
+  --dark13: #222;
+
+  --gray0: #bfb9b9;
+  --gray96: #f5f5f5;
+  --gray73: #beb8b8;
+  --gray67: #ababab;
+  --gray53: #888;
+  --gray39: #656464;
+  --gray27: #454545;
+
+  --green120: #dfd;
+  --green84: #89cd23;
+
+  --openSans600: 'Open Sans';
+  --oxygen400: 'Oxygen';
+}
