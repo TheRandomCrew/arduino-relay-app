@@ -34,7 +34,7 @@ const home = ({ router }) => {
                         description: 'Help'
                     },
                     {
-                        href: '/payment',
+                        href: '/settings',
                         icon: '/Menu/settings.png',
                         id: 'config-footer-button',
                         description: 'Settings'

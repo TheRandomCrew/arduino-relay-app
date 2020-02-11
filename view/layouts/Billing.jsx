@@ -6,7 +6,7 @@ const Billing = () => (
     <main>
       <div id="home">
         <div className="tabs">
-          <a href="/home/services" id="services-tabber">
+          <a href="/services" id="services-tabber">
             Servicios
           </a>
           <span id="billing-tabber" active='true'>

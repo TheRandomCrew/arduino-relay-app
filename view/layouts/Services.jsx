@@ -9,7 +9,7 @@ const Services = () => (
           <span id="services-tabber" active="true">
             Servicios
           </span>
-          <a href="./billing.html" id="billing-tabber">
+          <a href="/billing" id="billing-tabber">
             Facturaciones
           </a>
         </div>
@@ -27,7 +27,7 @@ const Services = () => (
             <div class="contenedor">
               <p class="pago">15 USD</p>
               <div class="pay-parent">
-                <a href="./payment.html" class="button-primary pay-button">
+                <a href="/payment" class="button-primary pay-button">
                   PAGAR
                 </a>
               </div>
