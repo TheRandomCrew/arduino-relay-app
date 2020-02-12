@@ -38,6 +38,7 @@ const LayoutStyle = () => (
       display: flex;
       justify-content: space-around;
       align-items: center;
+      padding: 0.8em 0;
     }
 
     .tabs {
@@ -66,6 +67,6 @@ const LayoutStyle = () => (
       box-shadow: 10px 10px 10px -9px var(--gray67);
     }
   `}</style>
-)
+);
 
-export default LayoutStyle
+export default LayoutStyle;

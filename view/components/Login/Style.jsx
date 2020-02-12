@@ -32,6 +32,7 @@ const LayoutStyle = () => (
         border: none;
         border-radius: 15px;
         padding: 0.2em 5.3em;
+        text-align: center;
       }
       .div-container {
         margin-top: 20vh;
@@ -83,6 +84,6 @@ const LayoutStyle = () => (
       /*:::::::::FIN INPUT placeholder:::::::::*/
     `}
   </style>
-)
+);
 
-export default LayoutStyle
+export default LayoutStyle;

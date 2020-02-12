@@ -1,64 +1,64 @@
-import React from 'react'
-import Layout from '../components/Settings/Layout'
+import React from "react";
+import Layout from "../components/Settings/Layout";
 
 const Settings = () => (
   <Layout>
     <main>
-      <div class="connect">
+      <div className="connect">
         <span>Servicio Electrico</span>
         <img
-          class="m-20"
+          className="m-20"
           src="./src/assets/Logo/isotipo.png"
           alt="energy connect"
         />
-        <button class="m-20 button-primary">Cancelar</button>
+        <button className="m-20 button-primary">Cancelar</button>
       </div>
-      <form class="m-20">
+      <form className="m-20">
         <fieldset>
           <label>
             <span>Notificaciones</span>
-            <div class="switch">
+            <div className="switch">
               <input
                 type="checkbox"
                 name="notifications"
                 id="notifications-checkbox"
                 checked
               />
-              <span class="slider round"></span>
+              <span className="slider round"></span>
             </div>
           </label>
         </fieldset>
         <fieldset>
           <label>
             Email
-            <div class="switch">
+            <div className="switch">
               <input
                 type="checkbox"
                 name="emails"
                 id="emails-checkbox"
                 checked
               />
-              <span class="slider round"></span>
+              <span className="slider round"></span>
             </div>
           </label>
         </fieldset>
         <fieldset>
           <label>
             Pago Automatico
-            <div class="switch">
+            <div className="switch">
               <input
                 type="checkbox"
                 name="auto-payment"
                 id="auto-payment-checkbox"
                 checked
               />
-              <span class="slider round"></span>
+              <span className="slider round"></span>
             </div>
           </label>
           Idioma
         </fieldset>
 
-        <div class="radio-toolbar">
+        <div className="radio-toolbar">
           <input
             type="radio"
             id="radioBanana"
@@ -77,6 +77,6 @@ const Settings = () => (
       </form>
     </main>
   </Layout>
-)
+);
 
-export default Settings
+export default Settings;
