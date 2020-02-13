@@ -1,6 +1,7 @@
 import React from "react";
 import Layout from "../components/Settings/Layout";
 import EnergyControl from "../containers/EnergyControl";
+import CheckBoxInput from "../containers/CheckBoxInput";
 
 const Settings = () => (
   <Layout>
@@ -8,48 +9,15 @@ const Settings = () => (
       <EnergyControl/>
       <form className="m-20">
         <fieldset>
-          <label>
-            <span>Notificaciones</span>
-            <div className="switch">
-              <input
-                type="checkbox"
-                name="notifications"
-                id="notifications-checkbox"
-                checked
-              />
-              <span className="slider round"></span>
-            </div>
-          </label>
+          <CheckBoxInput label='Notificaciones'/>
         </fieldset>
         <fieldset>
-          <label>
-            Email
-            <div className="switch">
-              <input
-                type="checkbox"
-                name="emails"
-                id="emails-checkbox"
-                checked
-              />
-              <span className="slider round"></span>
-            </div>
-          </label>
+          <CheckBoxInput label='Email'/>
         </fieldset>
         <fieldset>
-          <label>
-            Pago Automatico
-            <div className="switch">
-              <input
-                type="checkbox"
-                name="auto-payment"
-                id="auto-payment-checkbox"
-                checked
-              />
-              <span className="slider round"></span>
-            </div>
-          </label>
+          <CheckBoxInput label='Pago Automatico'/>
+        </fieldset>
           Idioma
-        </fieldset>
 
         <div className="radio-toolbar">
           <input
