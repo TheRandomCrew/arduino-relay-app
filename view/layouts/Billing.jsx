@@ -17,7 +17,7 @@ const Billing = () => (
           <div className="contenedor">
             <div className="">
               <p className="titulo m-20">Pago de servicio eléctrico </p>
-              <p className="cantidadFactura"> 50 USD </p>
+              <p className="cantidadFactura">USD$15.00</p>
             </div>
 
             <div className="datosFactura">
@@ -36,7 +36,7 @@ const Billing = () => (
               <a
                 href="/services"
                 onClick={e => {
-                  e.preventDefault()
+                  e.preventDefault() // https://www.thoughtco.com/how-to-add-a-print-button-4072006
                   window.print()
                   return false
                 }}

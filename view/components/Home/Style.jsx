@@ -25,6 +25,7 @@ const LayoutStyle = () => (
 
     main {
       font-family: var(--oxygen400), sans-serif;
+      margin-bottom: 80px;
     }
 
     footer {
