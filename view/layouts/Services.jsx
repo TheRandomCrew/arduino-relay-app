@@ -1,60 +1,66 @@
-import React from 'react'
-import Layout from '../components/Services/Layout'
+import React, { Component } from "react";
+import Layout from "../components/Services/Layout";
+import ServicesBody from "../components/Services/ServicesBody";
+import BillingBody from "../components/Billing/BillingBody";
 
-const Services = () => (
-  <Layout>
-    <main>
-      <div id="home">
-        <div class="tabs">
-          <span id="services-tabber" active="true">
-            Servicios
-          </span>
-          <a href="/billing" id="billing-tabber">
-            Facturaciones
-          </a>
-        </div>
-        <div id="services">
-          <div class="bar-container">
-            <h5 class="titulo">Renovacion</h5>
-            <div class="contenedor">
-              <p class="info-text">19/06/20</p>
-              <div class="bar-container">
-                <progress black="true" max="100" value="30"></progress>
-              </div>
-            </div>
+class Services extends Component {
+  constructor() {
+    super();
+    this.state = {
+      billingTab: false,
+      serviceTab: true
+    };
+  }
 
-            <h5 class="titulo">Pago</h5>
-            <div class="contenedor">
-              <p class="pago">15 USD</p>
-              <div class="pay-parent">
-                <a href="/payment" class="button-primary pay-button">
-                  PAGAR
-                </a>
-              </div>
-            </div>
+  handleClickBilling = () => {
+    this.setState({
+      billingTab: false,
+      serviceTab: true
+    });
+  };
 
-            <h5 class="titulo">Uso de Energia</h5>
-            <div class="contenedor">
-              <p class="info-text">70%</p>
-              <div class="bar-container">
-                <progress green="true" max="100" value="70"></progress>
-              </div>
-            </div>
+  handleClickbillingTab = () => {
+    this.setState({
+      billingTab: true,
+      serviceTab: false
+    });
+  };
 
-            <h5 class="titulo">Deudas</h5>
-            <div class="contenedor">
-              <p class="info-text">¡Felicitaciones Julio!</p>
-              <div class="">
-                <p class="m-20 estadoDeuda">
-                  No posees de ninguna deuda hasta la fecha
-                </p>
-              </div>
+  render() {
+    let { serviceTab, billingTab } = this.state;
+    let body;
+    if (serviceTab) {
+      body = <ServicesBody />;
+    } else {
+      body = <BillingBody />;
+    }
+
+    return (
+      <Layout>
+        <main>
+          <div id="home">
+            <div className="tabs">
+              <span
+                id="services-tabber"
+                onClick={this.handleClickBilling}
+                {...(serviceTab && { active: "true" })} //this is equals a: if(serviceTab) active="true"
+              >
+                Servicios
+              </span>
+              <span
+                id="billing-tabber"
+                onClick={this.handleClickbillingTab}
+                {...(billingTab && { active: "true" })}
+              >
+                Facturaciones
+              </span>
             </div>
+            {body}
           </div>
-        </div>
-      </div>
-    </main>
-  </Layout>
-)
+        </main>
+      </Layout>
+    );
+  }
+}
 
-export default Services
+export default Services;
