@@ -1,14 +1,16 @@
 import React from 'react'
+import { withCookie } from 'next-cookie'
 import Layout from '../components/Billing/Layout'
+import ActiveLink from '../containers/Link'
 
-const Billing = () => (
+const Billing = ({ cookie }) => (
   <Layout>
     <main>
       <div id="home">
         <div className="tabs">
-          <a href="/services" id="services-tabber">
+          <ActiveLink href="/services" id="services-tabber">
             Servicios
-          </a>
+          </ActiveLink>
           <span id="billing-tabber" active="true">
             Facturaciones
           </span>
@@ -22,7 +24,7 @@ const Billing = () => (
 
             <div className="datosFactura">
               <p>Fecha de emisión: 15/05/2020 </p>
-              <p>Remitente: Julio Gauss</p>
+              <p>Remitente: {cookie.get('name') || 'User'}</p>
               <p>N° Entidad: 9082745</p>
               <p>País: Brasil</p>
               <p>Empresa: Energy connect</p>
@@ -52,4 +54,4 @@ const Billing = () => (
   </Layout>
 )
 
-export default Billing
+export default withCookie(Billing)

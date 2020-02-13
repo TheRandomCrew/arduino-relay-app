@@ -43,7 +43,7 @@ const Services = () => (
 
             <h5 className="titulo">Deudas</h5>
             <div className="contenedor">
-              <p className="info-text">¡Felicitaciones Julio!</p>
+              <p className="info-text">¡Felicitaciones!</p>
               <div className="">
                 <p className="m-20 estadoDeuda">
                   No posees de ninguna deuda hasta la fecha
