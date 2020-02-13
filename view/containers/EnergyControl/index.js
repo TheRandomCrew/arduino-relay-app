@@ -3,14 +3,24 @@ import React, { useState } from 'react'
 const EnergyControl = () => {
   const [status, setStatus] = useState('off')
 
-  const pressOn = (e) => {
-      console.log('pressed ON')
-    setStatus('on')
+  const pressOn = () => {
+    fetch("https://arduino-relay-backend.herokuapp.com/50361855000/e")
+      .then(res => res.json())
+      .then(res=>{
+        console.log(res)
+        setStatus('on')
+      })
+      .catch(console.error)
   }
 
-  const pressOff = (e) => {
-    console.log('pressed OFF')
-    setStatus('off')
+  const pressOff = () => {
+    fetch("https://arduino-relay-backend.herokuapp.com/50361855000/e")
+      .then(res => res.json())
+      .then(res=>{
+        console.log(res)
+        setStatus('off')
+      })
+      .catch(console.error)
   }
 
   return (
