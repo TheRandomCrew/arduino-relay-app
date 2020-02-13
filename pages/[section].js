@@ -13,7 +13,7 @@ const home = ({ router }) => {
     const {section} = router.query
     return (
         <Dashboard
-        links = {
+            links = {
                 [
                     {
                         href: '/services',
@@ -34,7 +34,7 @@ const home = ({ router }) => {
                         description: 'Help'
                     },
                     {
-                        href: '/payment',
+                        href: '/settings',
                         icon: '/Menu/settings.png',
                         id: 'config-footer-button',
                         description: 'Settings'

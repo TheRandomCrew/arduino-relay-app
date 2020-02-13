@@ -3,33 +3,38 @@ import Layout from '../components/Payment/Layout'
 
 const Payment = () => (
   <Layout>
-    <main class="m-20 payment" id="payment">
-      <div class="">
-        <p class="titulo">Pago a realizar</p>
-        <p class="cantidadFactura">50 USD</p>
+    <main className="m-20 payment" id="payment">
+      <div className="">
+        <p className="titulo">Pago a realizar</p>
+        <p className="cantidadFactura">USD$15.00</p>
       </div>
       <div>
-        <form class="">
-          <label class="labelForm">Nombre del usuario</label>
-          <input type="text" id="name" name="" class="inputForm" />
-          <label class="labelForm">Numero de tarjeta</label>
-          <input type="text" id="card" name="" class="inputForm" />
+        <form onSubmit={e => e.preventDefault()}>
+          <label className="labelForm">Nombre del usuario</label>
+          <input type="text" id="name" name="" className="inputForm" />
+          <label className="labelForm">Numero de tarjeta</label>
+          <input type="text" id="card" name="" className="inputForm" />
 
-          <div class="row">
-            <div class="col-6">
-              <label class="labelForm ">Fecha de expiración</label>
-              <input type="date" id="date" name="" class="inputForm" />
+          <div className="row">
+            <div className="col-6">
+              <label className="labelForm ">Fecha de expiración</label>
+              <input type="date" id="date" name="" className="inputForm" />
             </div>
-            <div class="col-6">
-              <label class="labelForm ">Código de seguridad</label>
-              <input type="number" id="code" name="" class="inputForm" />
+            <div className="col-6">
+              <label className="labelForm ">Código de seguridad</label>
+              <input type="number" id="code" name="" className="inputForm" />
             </div>
           </div>
-          <input
+          <div className="row">
+            <a href="/billing" className="button-realizar-pago button-primary">
+              REALIZAR PAGO
+            </a>
+          </div>
+          {/* <input
             type="submit"
-            class="button-realizar-pago button-primary"
+            className="button-realizar-pago button-primary"
             value="REALIZAR PAGO"
-          />
+          /> */}
         </form>
       </div>
     </main>

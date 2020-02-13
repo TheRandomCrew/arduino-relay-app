@@ -109,8 +109,11 @@ const LayoutStyle = () => <style jsx="true">{`
   }
   
   .connect button {
-    background-color: var(--blue207);
     color: white;
+  }
+
+  .connect img {
+    width: 20%;
   }
   
   .connect span {
@@ -118,6 +121,14 @@ const LayoutStyle = () => <style jsx="true">{`
     font-size: 13px;
     font-weight: bold;
     padding-left: 20px;
+  }
+
+  .connect .clr-red{
+    background-color: red;
+  }
+
+  .connect .clr-green {
+    background-color: green;
   }
   
 `}</style>
