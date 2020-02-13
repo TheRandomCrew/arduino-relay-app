@@ -1,15 +1,15 @@
-import React from "react";
-import Layout from "../components/Payment/Layout";
+import React from 'react'
+import Layout from '../components/Payment/Layout'
 
 const Payment = () => (
   <Layout>
     <main className="m-20 payment" id="payment">
       <div className="">
         <p className="titulo">Pago a realizar</p>
-        <p className="cantidadFactura">50 USD</p>
+        <p className="cantidadFactura">USD$15.00</p>
       </div>
       <div>
-        <form className="">
+        <form onSubmit={e => e.preventDefault()}>
           <label className="labelForm">Nombre del usuario</label>
           <input type="text" id="name" name="" className="inputForm" />
           <label className="labelForm">Numero de tarjeta</label>
@@ -25,15 +25,20 @@ const Payment = () => (
               <input type="number" id="code" name="" className="inputForm" />
             </div>
           </div>
-          <input
+          <div className="row">
+            <a href="/billing" className="button-realizar-pago button-primary">
+              REALIZAR PAGO
+            </a>
+          </div>
+          {/* <input
             type="submit"
             className="button-realizar-pago button-primary"
             value="REALIZAR PAGO"
-          />
+          /> */}
         </form>
       </div>
     </main>
   </Layout>
-);
+)
 
-export default Payment;
+export default Payment

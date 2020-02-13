@@ -9,11 +9,11 @@ const Billing = () => (
           <a href="/services" id="services-tabber">
             Servicios
           </a>
-          <span id="billing-tabber" active='true'>
+          <span id="billing-tabber" active="true">
             Facturaciones
           </span>
         </div>
-        <div className="m-20" id="billing">
+        <div className="m-20 print" id="billing">
           <div className="contenedor">
             <div className="">
               <p className="titulo m-20">Pago de servicio eléctrico </p>
@@ -33,7 +33,15 @@ const Billing = () => (
                 Cualquier consulta o reclamos, puedes enviar un mensaje a
                 nuestro buzón
               </p>
-              <a href="#" className="button-primary print-button ">
+              <a
+                href="/services"
+                onClick={e => {
+                  e.preventDefault()
+                  window.print()
+                  return false
+                }}
+                className="button-primary print-button "
+              >
                 IMPRIMIR
               </a>
             </div>
