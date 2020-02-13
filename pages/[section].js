@@ -13,7 +13,7 @@ const home = ({ router }) => {
     const {section} = router.query
     return (
         <Dashboard
-        links = {
+            links = {
                 [
                     {
                         href: '/services',

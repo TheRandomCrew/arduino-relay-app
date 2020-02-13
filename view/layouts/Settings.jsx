@@ -1,18 +1,11 @@
 import React from "react";
 import Layout from "../components/Settings/Layout";
+import EnergyControl from "../containers/EnergyControl";
 
 const Settings = () => (
   <Layout>
     <main>
-      <div className="connect">
-        <span>Servicio Electrico</span>
-        <img
-          className="m-20"
-          src="./src/assets/Logo/isotipo.png"
-          alt="energy connect"
-        />
-        <button className="m-20 button-primary">Cancelar</button>
-      </div>
+      <EnergyControl/>
       <form className="m-20">
         <fieldset>
           <label>
