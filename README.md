@@ -4,24 +4,23 @@
 [![Issues-open][issues-open-shield]][issues-url]
 [![Issues-closed][issues-closed-shield]][issues-url]
 [![Contributors][contributors-shield]][contributors-url]
-[![Framework][badge-framework]][framework-url]
 [![contributions welcome][contributions-welcome]][issues-url]
 
 <!-- PROJECT LOGO -->
 <br/>
 <p align="center">
-  <a href="https://">
-	  <img src="https://img.icons8.com/color/96/000000/full-image.png" alt="Logo"/>
+  <a href="https://github.com/Israel-Laguan/arduino-relay-app/">
+	  <img src="https://github.com/Israel-Laguan/arduino-relay-app/raw/master/public/Logo/logo-blue.png" alt="Logo"/>
   </a>
 
   <h1 align="center">
-	arduino-relay-app
+	Energy Connect User App
   </h1>
 
   <p align="center">
     <br/>
 	  🖊️
-    <a href="https://">Read the article</a>
+    <a href="https://docs.google.com/document/d/1_Q9MByFOJWq-gpOqzo94fKJn1sAZ7zUqW3S83aWcm3E/edit?usp=sharing">Read the Proposal (Spanish)</a>
     🐞
     <a href="https://github.com/Israel-Laguan/arduino-relay-app/issues">Report a Bug</a>
     🙋‍♂️
@@ -31,10 +30,61 @@
 
 ## Table of Contents
 
-1. [Author](#author)
-2. [Contributing](#contributing)
-3. [Show your support](#show-your-support)
-4. [License](#license)
+1. [The Project](#the-project)
+2. [Features](#features)
+3. [Run It](#run-it)
+4. [Author](#author)
+5. [Contributing](#contributing)
+6. [Show your support](#show-your-support)
+7. [License](#license)
+
+# The Project
+
+Energy Connect SV is an incoming startup that provides inteligent electrical meters for homes and industry. Powered by IOT, provides an easy consume management of energy resources.
+
+This is the early design for the mobile app for the user.
+
+# Features
+
+[![Framework][badge-framework]][framework-url]
+![javascript][]
+![react][]
+![css][]
+
+- Using Next.js
+- No Style Framework, only pure CSS
+- Async Isomorphic Fetch
+- Mobile Optimized
+
+# Run It
+
+## Prerequisites
+
+You will need [Node.js](https://nodejs.org) version 8.0 or greater installed on your system.
+
+## Setup
+
+Get the code by either cloning this repository using git
+
+```bash
+git clone git@github.com:Israel-Laguan/arduino-relay-app.git
+```
+
+... or [downloading source code](git@github.com:Israel-Laguan/arduino-relay-app.git/archive/master.zip) as a zip archive.
+
+Once downloaded, open the terminal in the project directory, and install dependencies with:
+
+```bash
+npm install
+```
+
+Then start the app with:
+
+```bash
+npm run dev
+```
+
+The app should now be up and running at http://localhost:3000 🚀
 
 # Author
 
@@ -114,7 +164,10 @@ Feel free to fork this project and improve it
 [issues-open-shield]: https://img.shields.io/github/issues/Israel-Laguan/arduino-relay-app?style=for-the-badge
 [issues-url]: https://github.com/Israel-Laguan/arduino-relay-app/issues
 [issues-closed-shield]: https://img.shields.io/github/issues-closed/Israel-Laguan/arduino-relay-app?style=for-the-badge
-[badge-framework]: https://img.shields.io/badge/framework-here-9cf?style=for-the-badge
+[badge-framework]: https://img.shields.io/badge/framework-Next.js-000?style=for-the-badge&logo=next.js
 [framework-url]: https://google.com
 [contributions-welcome]: https://img.shields.io/badge/contributions-welcome-brightgreen.svg?style=for-the-badge
 [badge-license]: https://img.shields.io/:license-mit-blue.svg?style=for-the-badge
+[react]: https://img.shields.io/badge/React-16+-61DAFB?style=for-the-badge&logo=react
+[javascript]: https://img.shields.io/badge/JAVASCRIPT-ES6%2B-F7DF1E?style=for-the-badge&logo=javascript
+[css]: https://img.shields.io/badge/style-CSS-1572B6?style=for-the-badge&logo=css3
